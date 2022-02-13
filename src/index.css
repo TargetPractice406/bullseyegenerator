@@ -1,13 +1,35 @@
-body {
+html,
+body,
+div#root,
+div.drawArea {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+}
+
+.drawArea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  /*float: left;*/
+  cursor: crosshair;
+}
+
+.path {
+  fill: none;
+  stroke-width: 1px;
+  stroke: black;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.drawing {
+  width: 100%;
+  height: 100%;
 }
